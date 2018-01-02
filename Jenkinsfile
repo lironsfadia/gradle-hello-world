@@ -1,4 +1,4 @@
-node (‘slave’){
+node (‘slave1’){
  gradle4 = tool 'gradle4'
  stage ('chekcout'){
     git url: 'https://github.com/lironsfadia/gradle-hello-world', branch : ‘master’
