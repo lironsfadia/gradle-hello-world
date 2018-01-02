@@ -1,7 +1,7 @@
-node (‘slave1’){
+node ('slave1'){
  gradle4 = tool 'gradle4'
  stage ('chekcout'){
-    git url: 'https://github.com/lironsfadia/gradle-hello-world', branch : ‘master’
+    git url: 'https://github.com/lironsfadia/gradle-hello-world'
  }
  stage ('build')
  {
