@@ -9,7 +9,7 @@ node ('slave1'){
  }
  stage('unit-test')
  {
-     sh "${gradle4}/bin/gradle clean install"
+     sh "${gradle4}/bin/gradle test"
      junit "test-results/junit-platform/*.xml"
  }
 }
