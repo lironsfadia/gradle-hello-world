@@ -1,7 +1,7 @@
-node { //optionally add node label: node (‘slave1’)
+node (‘slave1’){
  gradle4 = tool 'gradle4'
  stage ('chekcout'){
-    checkout scm
+    git url: 'https://github.com/lironsfadia/gradle-hello-world', branch : ‘master’
  }
  stage ('build')
  {
