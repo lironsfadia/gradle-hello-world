@@ -6,6 +6,7 @@ node (‘slave1’){
  stage ('build')
  {
      sh "${gradle4}/bin/gradle clean jar"
+     archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
  }
  stage ('unit-test')
  {
